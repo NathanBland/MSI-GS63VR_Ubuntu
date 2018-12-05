@@ -1,5 +1,28 @@
 # Dual boot ubuntu 16.04 LTS with Windows 10 on MSI GS63VR 7RF 
 
+# Additional infomration
+    https://devtalk.nvidia.com/default/topic/1029134/ubuntu-16-04-lts-geforce-gtx-1060-driver-installation-leads-to-login-loop/
+    https://github.com/0i0/MSI-GS63VR_Ubuntu
+    https://blender.stackexchange.com/questions/7485/enabling-gpu-rendering-for-cycles
+
+    https://github.com/Gibtnix/MSIKLM
+
+    https://askubuntu.com/questions/835364/ubuntu-16-04-1-nvidia-work
+    https://bugs.launchpad.net/lightdm/+bug/1637733
+
+WORKAROUND:
+
+Commenting line:
+gfxmode $linux_gfx_mode
+in GRUB2 menu entry solved the problem
+
+=====
+
+sudo prime-select intel
+sudo prime-select nvidia
+
+
+
 # Install Ubuntu from USB
 
 Download Ubuntu 16.04 LTS image (http://releases.ubuntu.com/16.04.3/ubuntu-16.04.3-desktop-amd64.iso)
